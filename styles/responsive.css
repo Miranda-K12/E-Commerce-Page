@@ -1,0 +1,253 @@
+/*Screen size  768px */
+@media (max-width: 1024px) {
+  .nav-buttons__search {
+    width: 80%;
+    padding-left: 0.5rem;
+    padding-right: 2rem;
+  }
+
+  .section {
+    width: 90%
+  }
+
+  .hero-section {
+    grid-template-columns: 1fr;
+    width: 90%;
+  }
+
+  .categories-list {
+    display: grid;
+    grid-template-columns: repeat(5, 1fr);
+    gap: 1rem;
+  }
+
+  .hero-content {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+  }
+
+  .hero-text {
+    margin-bottom: var(--large-space);
+    padding-left: 0;
+    padding-top: var(--large-space);
+  }
+
+  .hero-subtitles {
+    justify-content: center;
+  }
+
+  .hero-title {
+    margin: 0 auto;
+    text-align: center;
+  }
+
+  .hero-button {
+    text-align: center;
+  }
+
+  .flash-sales-header {
+    grid-template-columns: 1fr;
+  }
+
+  .flesh-section-title {
+    flex-direction: column;
+    align-items: flex-start;
+  }
+
+  .section-navigation {
+    justify-content: flex-start;
+    margin-top: var(--large-space);
+  }
+
+  .section-header {
+    display: flex;
+    justify-content: space-between;
+  }
+
+  .flesh-sales-cards {
+    grid-template-columns: repeat(3, 1fr);
+    margin-left: 0;
+    width: 90%;
+    margin: 0 auto;
+  }
+
+  .music-section {
+    padding: 4.4rem;
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .music-box-content {
+    width: 100%;
+    align-items: center;
+  }
+
+  .music-box-content h3 {
+    text-align: center;
+  }
+
+  .music-box-image {
+    width: 100%;
+  }
+
+  .our-products-section {
+    margin-bottom: 7.1rem;
+  }
+
+  .footer-top-container {
+    width: 90%;
+  }
+
+  .apps-container {
+    grid-template-columns: 50% 45%;
+  }
+
+  .wishlist-items {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+
+/*Screen size  768px */
+@media (max-width: 768px) {
+  .header {
+    background-color: var(--secondary-color);
+    padding-top: 1.2rem;
+    height: 7.2rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+
+  .header__bottom-box,
+  .header__box {
+    display: none;
+  }
+
+  .drop-menu {
+    display: block;
+    width: 100%;
+    padding: 1.2rem;
+  }
+
+  .dropdown {
+    display: none;
+  }
+
+  .dropdown-list {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+  }
+
+  .dropdown-link {
+    font-size: var(--font-medium-size);
+    font-weight: 500;
+    color: var(--primary-color);
+  }
+
+  .categories-list {
+    grid-template-columns: repeat(3, 1fr);
+    gap: 1rem;
+    justify-items: center;
+  }
+
+  .flesh-sales-cards {
+    grid-template-columns: 1fr 1fr;
+  }
+
+  .service-features {
+    flex-direction: column;
+    margin-top: 7rem;
+  }
+
+  .section-header {
+    grid-template-columns: 1fr;
+  }
+
+  .products-container {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 3rem;
+  }
+
+  .new-arrivals-container {
+    grid-template-columns: 1fr;
+    grid-template-rows: auto;
+  }
+
+  .first-image,
+  .second-image,
+  .third-image,
+  .fourth-image {
+    grid-column: 1;
+    grid-row: auto;
+  }
+
+  .image-text {
+    left: 50%;
+    bottom: 40%;
+  }
+
+  .footer-top-container {
+    grid-template-columns: repeat(3, 1fr);
+  }
+
+  .footer-column,
+  .footer-column ul {
+    text-align: center;
+  }
+
+  .about-section {
+    width: 90.625%;
+    grid-template-columns: 1fr;
+    margin: 0 auto;
+    gap: 6%;
+  }
+
+  .about-section-text {
+    text-align: center;
+  }
+
+  .about-features-section {
+    grid-template-columns: repeat(2, 1fr);
+    gap: 3rem;
+    margin-top: 10rem;
+  }
+
+  .employees-section {
+    margin-top: 7rem;
+  }
+
+}
+
+@media (max-width: 480px) {
+  .dropdown-link {
+    font-size: 1.2rem;
+  }
+
+  .nav-buttons__wishlist-icon {
+    margin-right: 6.4rem;
+  }
+
+  .flesh-sales-cards {
+    grid-template-columns: 1fr;
+  }
+
+  .categories__container {
+    grid-template-columns: 1fr 1fr;
+  }
+
+  .breadcrumb {
+    margin: 0 auto !important;
+    padding-left: 2.4rem !important;
+    padding-top: 2.4rem !important;
+  }
+
+  .employees-container,
+  .wishlist-items,
+  .products-container {
+    grid-template-columns: 1fr;
+  }
+}

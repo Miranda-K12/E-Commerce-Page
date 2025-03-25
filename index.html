@@ -1,0 +1,949 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="./styles/reset.css">
+  <link rel="stylesheet" href="./styles/styles.css">
+  <link rel="stylesheet" href="./styles/responsive.css">
+   <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+  <title>E-commerce</title>
+</head>
+<body>
+  <!-- Header-->
+ <header class="header">
+  <!-- Header Box containing the promotion text and shop now link -->
+ <div class="header__box">
+  <p class="header__text">
+    Summer Sale For All Swim Suits And Free Express Delivery - OFF 50% 
+    <a href="#shopnow" class="hero__shop-now-link">Shop Now</a>
+  </p>
+</div>
+<div class="dropdown">
+    <select id="language-select" class="dropdown-select">
+      <option value="english" selected>English</option>
+      <option value="french">French</option>
+      <option value="spanish">Spanish</option>
+      <option value="german">German</option>
+      <option value="italian">Italian</option>
+    </select>
+  </div>
+   <!-- Header Bottom Box containing the navigation bar and buttons -->
+  <div class="header__bottom-box">
+     <!-- Navigation Bar with menu items -->
+   <div class="navbar">
+    <p class="navbar-header">Exclusive</p>
+     <nav class="navbar__nav">
+    <ul class="navbar__list">
+      <li><a href="./index.html" class="navbar__link">Home</a></li>
+      <li><a href="#contact" class="navbar__link">Contact</a></li>
+     <li><a href="./about.html" class="navbar__link">About</a></li>
+      <li><a href="#signup" class="navbar__link navbar__link--signup">Sign Up</a></li>
+    </ul>
+  </nav>
+   </div>
+   <!-- Nav Buttons (Search Bar, Wishlist, and Basket) -->
+   <div class="nav-buttons">
+  <div class="nav-buttons__search">
+    <input type="text" placeholder="What are you looking for?" class="nav-buttons__search-input">
+    <img src="./images/Home/search.svg" class="nav-buttons__search-icon" alt="search-icon" />
+  </div>
+  <div class="nav-buttons__icons">
+   <a href="wishlist.html">
+  <img src="./images/Home/Wishlist.svg" class="nav-buttons__wishlist-icon" alt="wishlist-icon" />
+</a>
+    <img src="./images/Home/basket.svg" class="nav-buttons__basket-icon" alt="basket-icon" />
+  </div>
+</div>
+  </div>
+  <!-- Dropdown Menu for mobile and ipad version -->
+<div class="drop-menu">
+ <ul class="navbar__list dropdown-list">
+      <li><a href="#home" class="navbar__link dropdown-link">Home</a></li>
+      <li><a href="#contact" class="navbar__link dropdown-link">Contact</a></li>
+     <li><a href="about.html" class="navbar__link dropdown-link">About</a></li>
+      <li><a href="#signup" class="navbar__link navbar__link--signup dropdown-link">Sign Up</a></li>
+      <li><a href="wishlist.html">
+  <img src="./images/Home/Wishlist.svg" class="nav-buttons__wishlist-icon" alt="wishlist-icon" />
+</a></li>
+    </ul>
+</div>
+</header>
+<main>
+    <!-- Hero Section -->
+  <section class="hero-section">
+     <!-- Sidebar with categories-Bootstrap -->
+  <aside>
+    <div class="categories-box">
+<ul class="categories-list">
+<li class="list-group-item"> Woman’s Fashion</li>
+<li class="list-group-item">Man’s Fashion</li>
+  <li class="list-group-item">Electronics</li>
+  <li class="list-group-item">Home &amp; Lifestyle</li>
+  <li class="list-group-item">Medicine</li>
+   <li class="list-group-item">Sports &amp; Outdoor</li>
+   <li class="list-group-item">Baby’s &amp; Toys</li>
+    <li class="list-group-item">Groceries &amp; Pets</li>
+    <li class="list-group-item">Health &amp; Beauty</li>
+</ul>
+</div>
+  </aside>
+   <!-- Hero Content-->
+  <div class="hero-content">
+     <!-- Hero Text Section -->
+    <div class="hero-text">
+      <div class="hero-subtitles">
+        <img src="./images/Home/apple.svg" alt="apple" />
+        <p>iPhone 14 Series</p>
+      </div>
+      <div class="hero-title">
+        <h1>Up to 10% off Voucher</h1>
+      </div>
+      <div class="hero-button">
+        <a href="#" class="shopping-link">Shop Now</a>
+        <img src="./images/Home/write-arrow.svg" alt="right-arrow" />
+      </div>
+    </div>
+     <!-- Hero Image Section -->
+    <div class="hero-image">
+      <img src="./images/Home/hero-img.png" alt="mobile-img" />
+    </div>
+    <img src="./images/Home/hero-icons.svg" alt="navigation-buttons"  class="hero-icons"/>
+  </div>
+  </section>
+   <!-- flash-sales Section -->
+<section class="flash-sales-section">
+    <!-- Flash Sales Header Section -->
+  <div class="flash-sales-header">
+    <div class="section-titles">
+<div class="section-title-box">
+    <div class="section-title-elements">
+      <div class="title-element-box">
+      </div>
+      <p>Today's</p>
+    </div>
+  </div>
+<div class="flesh-section-title">
+<h3>Flash Sales</h3>
+ <!-- Timer Box -->
+<div class="time-box">
+  <ul class="time-set">
+    <li>Days</li>
+    <li>Hours</li>
+    <li>Minutes</li>
+    <li>Seconds</li>
+  </ul>
+   <!-- Countdown Numbers -->
+  <div class="time-box-info-numbers">
+  <div class="time-box-info-number">
+    03
+  </div>
+  <div class="time-dots">
+     <div class="dot"></div>
+     <div class="dot"></div>
+</div>
+  <div class="time-box-info-number">
+    23
+  </div>
+    <div class="time-dots">
+     <div class="dot"></div>
+     <div class="dot"></div>
+</div>
+  <div class="time-box-info-number">
+    19
+  </div>
+    <div class="time-dots">
+     <div class="dot"></div>
+     <div class="dot"></div>
+</div>
+  <div class="time-box-info-number">
+    56
+  </div>
+  </div>
+</div>
+  </div>
+  </div>
+   <!-- Navigation Buttons for Product Cards -->
+  <div class="section-navigation">
+    <div class="navigation-button">
+      <img src="./images/Home/arrow-left.svg" alt="arrow-left" />
+    </div>
+    <div class="navigation-button">
+      <img src="./images/Home/arrow-right.svg" alt="arrow-right" />
+    </div>
+  </div>
+  </div>
+  <!-- Flash Sales Product Cards -->
+  <div class="flesh-sales-cards">
+    <div class="wishlist-card">
+      <div class="wishlist-images">
+  <div class="card-icons">
+        <img src="./images/Home/heart.svg" alt="heart-icon" />
+        <img src="./images/Home/eye.svg" alt="eye-icon" />
+      </div>
+   <p class="card-label red-label">-40%</p>
+      <img src="./images/Home/Gaming.png" alt="gamepad" class="wishlist-img"/>
+    </div>
+  <div class="card-text">
+    <h5 class="product-name">HAVIT HV-G92 Gamepad</h5>
+     <div class="product-prices">
+          <p class="current-price">$120</p>
+          <p class="old-price">$160</p>
+        </div>
+    <div class="rating-box">
+          <div class="rating-stars">
+          <img src="./images/Home/orange-star.svg" alt="orange-star" />
+           <img src="./images/Home/orange-star.svg" alt="orange-star" />
+            <img src="./images/Home/orange-star.svg" alt="orange-star" />
+             <img src="./images/Home/orange-star.svg" alt="orange-star" />
+              <img src="./images/Home/orange-star.svg" alt="orange-star" />
+             </div>
+             <div class="rating-num">
+              <p>(88)</p>
+             </div>
+        </div>
+  </div>
+</div>
+  <div class="wishlist-card">
+          <div class="wishlist-images">
+<div class="card-icons">
+        <img src="./images/Home/heart.svg" alt="heart-icon" />
+        <img src="./images/Home/eye.svg" alt="eye-icon" />
+      </div>
+      <p class="card-label red-label">-40%</p>
+      <img src="./images/Home/keyboard.png" alt="keyboard" class="wishlist-img" />
+      </div>
+     <button class="card-button" type="button">Add To Cart</button>
+  <div class="card-text">
+    <h5 class="product-name">AK-900 Wired Keyboard</h5>
+     <div class="product-prices">
+          <p class="current-price">$960</p>
+          <p class="old-price">$1160</p>
+        </div>
+    <div class="rating-box">
+          <div class="rating-stars">
+          <img src="./images/Home/orange-star.svg" alt="orange-star" />
+           <img src="./images/Home/orange-star.svg" alt="orange-star" />
+            <img src="./images/Home/orange-star.svg" alt="orange-star" />
+             <img src="./images/Home/orange-star.svg" alt="orange-star" />
+              <img src="./images/Home/grey-star.svg" alt="grey-star" />
+             </div>
+             <div class="rating-num">
+              <p>(75)</p>
+             </div>
+        </div>
+  </div>
+</div>
+  <div class="wishlist-card">
+          <div class="wishlist-images">
+<div class="card-icons">
+        <img src="./images/Home/heart.svg" alt="heart-icon" />
+        <img src="./images/Home/eye.svg" alt="eye-icon" />
+      </div>
+      <p class="card-label red-label">-30%</p>
+      <img src="./images/Wishlist/tv.png" alt="tv" class="wishlist-img" />
+      </div>
+  <div class="card-text">
+    <h5 class="product-name">IPS LCD Gaming Monitor </h5>
+     <div class="product-prices">
+          <p class="current-price">$370</p>
+          <p class="old-price">$400</p>
+        </div>
+    <div class="rating-box">
+          <div class="rating-stars">
+          <img src="./images/Home/orange-star.svg" alt="orange-star" />
+           <img src="./images/Home/orange-star.svg" alt="orange-star" />
+            <img src="./images/Home/orange-star.svg" alt="orange-star" />
+             <img src="./images/Home/orange-star.svg" alt="orange-star" />
+              <img src="./images/Home/orange-star.svg" alt="orange-star" />  
+             </div>
+             <div class="rating-num">
+              <p>(99)</p>
+             </div>
+        </div>
+  </div>
+</div>
+<div class="wishlist-card">
+          <div class="wishlist-images">
+<div class="card-icons">
+        <img src="./images/Home/heart.svg" alt="heart-icon" />
+        <img src="./images/Home/eye.svg" alt="eye-icon" />
+      </div>
+      <p class="card-label red-label">-25%</p>
+      <img src="./images/Home/chair.png" alt="chair" class="wishlist-img" />
+      </div>
+  <div class="card-text">
+    <h5 class="product-name">S-Series Comfort Chair</h5>
+     <div class="product-prices">
+          <p class="current-price">$375</p>
+          <p class="old-price">$400</p>
+        </div>
+    <div class="rating-box">
+          <div class="rating-stars">
+          <img src="./images/Home/orange-star.svg" alt="orange-star" />
+           <img src="./images/Home/orange-star.svg" alt="orange-star" />
+            <img src="./images/Home/orange-star.svg" alt="orange-star" />
+             <img src="./images/Home/orange-star.svg" alt="orange-star" />
+             <img src="./images/Home/star-half-filled.svg"  alt="half-orange"/>
+             </div>
+             <div class="rating-num">
+              <p>(99)</p>
+             </div>
+        </div>
+  </div>
+</div>
+ <div class="wishlist-card">
+          <div class="wishlist-images">
+<div class="card-icons">
+        <img src="./images/Home/heart.svg" alt="heart-icon" />
+        <img src="./images/Home/eye.svg" alt="eye-icon" />
+      </div>
+      <p class="card-label red-label">-25%</p>
+      <img src="./images/Home/chair.png" alt="chair" class="wishlist-img" />
+      </div>
+  <div class="card-text">
+    <h5 class="product-name">S-Series Comfort Chair</h5>
+     <div class="product-prices">
+          <p class="current-price">$375</p>
+          <p class="old-price">$400</p>
+        </div>
+    <div class="rating-box">
+          <div class="rating-stars">
+          <img src="./images/Home/orange-star.svg" alt="orange-star" />
+           <img src="./images/Home/orange-star.svg" alt="orange-star" />
+            <img src="./images/Home/orange-star.svg" alt="orange-star" />
+             <img src="./images/Home/orange-star.svg" alt="orange-star" />
+             <img src="./images/Home/star-half-filled.svg"  alt="half-orange"/>
+             </div>
+             <div class="rating-num">
+              <p>(99)</p>
+             </div>
+        </div>
+  </div>
+</div>
+  </div>
+</section>
+<!-- Section categories  -->
+<section class="categories section">
+  <!-- Section Header -->
+  <div class="section-header">
+<div class="section-title-box">
+    <div class="section-title-elements">
+      <div class="title-element-box">
+      </div>
+      <p>Categories</p>
+    </div>
+    <h3>Browse By Category</h3>
+  </div>
+    <!-- Section Navigation-->
+  <div class="section-navigation">
+    <div class="navigation-button">
+      <img src="./images/Home/arrow-left.svg" alt="arrow-left" />
+    </div>
+    <div class="navigation-button">
+      <img src="./images/Home/arrow-right.svg" alt="arrow-right" />
+    </div>
+  </div>
+  </div>
+  <!-- Categories Container -->
+  <div class="categories__container">
+    <!-- Category Item: Phones -->
+    <div class="categories__container-box">
+      <img src="./images/Home/cellPhone.svg" alt="cellPhone" />
+      <p>Phones</p>
+    </div>
+    <!-- Category Item: Computers -->
+    <div class="categories__container-box">
+      <img src="./images/Home/computer.svg" alt="computer" />
+      <p>Computers</p>
+    </div>
+      <!-- Category Item: SmartWatch -->
+    <div class="categories__container-box">
+      <img src="./images/Home/smartWatch.svg" alt="SmartWatch" />
+      <p>SmartWatch</p>
+    </div>
+     <!-- Category Item: Camera -->
+    <div class="categories__container-box camera-box">
+      <img src="./images/Home/camera.svg" alt="Camera" />
+      <p>Camera</p>
+    </div>
+    <!-- Category Item: Headphones -->
+    <div class="categories__container-box">
+      <img src="./images/Home/headphone.svg" alt="HeadPhones" />
+      <p>HeadPhones</p>
+    </div>
+      <!-- Category Item: Gaming -->
+    <div class="categories__container-box">
+      <img src="./images/Home/gamepad.svg" alt="Gaming" />
+      <p>Gaming</p>
+    </div>
+  </div>
+</section>
+  <!-- Section Selling -->
+<section class="selling-section section">
+   <div class="section-header">
+<div class="section-title-box">
+    <div class="section-title-elements">
+      <div class="title-element-box">
+      </div>
+      <p>This Month</p>
+    </div>
+    <h3>Best Selling Products</h3>
+  </div>
+    <!--Navigation of Section-->
+  <div class="section-navigation">
+   <button type="button" class="view-button button">View All</button>
+  </div>
+  </div>
+    <!-- products-container -->
+  <div class="products-container">
+    <!-- products-card -->
+    <div class="product-card">
+      <div class="card-images">
+      <div class="card-icons">
+        <img src="./images/Home/heart.svg" alt="heart-icon" />
+        <img src="./images/Home/eye.svg" alt="eye-icon" />
+      </div>
+      <img src="./images/Home/coat.svg" alt="red-coat" class="card-img"/>
+      </div>
+      <div class="card-text">
+        <h5 class="product-name">The north coat</h5>
+        <div class="product-prices">
+          <p class="current-price">$260</p>
+          <p class="old-price">$360</p>
+        </div>
+        <div class="rating-box">
+          <div class="rating-stars">
+          <img src="./images/Home/orange-star.svg" alt="orange-star" />
+           <img src="./images/Home/orange-star.svg" alt="orange-star" />
+            <img src="./images/Home/orange-star.svg" alt="orange-star" />
+             <img src="./images/Home/orange-star.svg" alt="orange-star" />
+              <img src="./images/Home/orange-star.svg" alt="orange-star" />
+             </div>
+             <div class="rating-num">
+              <p>(65)</p>
+             </div>
+        </div>
+      </div>
+    </div>
+    <!-- products-card -->
+      <div class="product-card">
+      <div class="card-images">
+      <div class="card-icons">
+        <img src="./images/Home/heart.svg" alt="heart-icon" />
+        <img src="./images/Home/eye.svg" alt="eye-icon" />
+      </div>
+      <img src="./images/Home/bag.svg" alt="bag" class="card-img"/>
+      </div>
+      <div class="card-text">
+        <h5 class="product-name">Gucci duffle bag</h5>
+        <div class="product-prices">
+          <p class="current-price">$960</p>
+          <p class="old-price">$1160</p>
+        </div>
+        <div class="rating-box">
+          <div class="rating-stars">
+          <img src="./images/Home/orange-star.svg" alt="orange-star" />
+           <img src="./images/Home/orange-star.svg" alt="orange-star" />
+            <img src="./images/Home/orange-star.svg" alt="orange-star" />
+             <img src="./images/Home/orange-star.svg" alt="orange-star" />
+              <img src="./images/Home/star-half-filled.svg" alt="orange-star" />
+             </div>
+             <div class="rating-num">
+              <p>(65)</p>
+             </div>
+        </div>
+      </div>
+    </div>
+    <!-- products-card -->
+      <div class="product-card">
+      <div class="card-images">
+      <div class="card-icons">
+        <img src="./images/Home/heart.svg" alt="heart-icon" />
+        <img src="./images/Home/eye.svg" alt="eye-icon" />
+      </div>
+      <img src="./images/Home/cooler.svg" alt="cooler" class="card-img"/>
+      </div>
+      <div class="card-text">
+        <h5 class="product-name">RGB liquid CPU Cooler</h5>
+        <div class="product-prices">
+          <p class="current-price">$160</p>
+          <p class="old-price">$170</p>
+        </div>
+        <div class="rating-box">
+          <div class="rating-stars">
+          <img src="./images/Home/orange-star.svg" alt="orange-star" />
+           <img src="./images/Home/orange-star.svg" alt="orange-star" />
+            <img src="./images/Home/orange-star.svg" alt="orange-star" />
+             <img src="./images/Home/orange-star.svg" alt="orange-star" />
+              <img src="./images/Home/star-half-filled.svg" alt="orange-star" />
+             </div>
+             <div class="rating-num">
+              <p>(65)</p>
+             </div>
+        </div>
+      </div>
+    </div>
+    <!-- products-card -->
+      <div class="product-card">
+      <div class="card-images">
+      <div class="card-icons">
+        <img src="./images/Home/heart.svg" alt="heart-icon" />
+        <img src="./images/Home/eye.svg" alt="eye-icon" />
+      </div>
+      <img src="./images/Home/bookself.svg" alt="bookself" class="card-img"/>
+      </div>
+      <div class="card-text">
+        <h5 class="product-name">Small BookSelf</h5>
+        <div class="product-prices">
+          <p class="current-price">$360</p>
+        </div>
+        <div class="rating-box">
+          <div class="rating-stars">
+          <img src="./images/Home/orange-star.svg" alt="orange-star" />
+           <img src="./images/Home/orange-star.svg" alt="orange-star" />
+            <img src="./images/Home/orange-star.svg" alt="orange-star" />
+             <img src="./images/Home/orange-star.svg" alt="orange-star" />
+              <img src="./images/Home/orange-star.svg" alt="orange-star" />
+             </div>
+             <div class="rating-num">
+              <p>(65)</p>
+             </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+ <!-- Music Section -->
+<section class="music-section section">
+  <div class="music-box-content">
+    <p>Categories</p>
+    <h3>Enhance Your Music Experience</h3>
+     <!-- Time -->
+    <div class="time-container">
+      <img src="./images/Home/hours.svg" alt="hours-icon" />
+      <img src="./images/Home/days.svg" alt="days-icon" />
+      <img src="./images/Home/minutes.svg" alt="minutes-icon" />
+      <img src="./images/Home/seconds.svg" alt="seconds-icon" />
+    </div>
+    <button type="button" class="green-button button">Buy Now!</button>
+  </div>
+   <!-- Music Section image -->
+  <div class="music-box-image">
+      <img src="./images/Home/music.png" alt="music"/>
+  </div>
+</section>
+ <!-- our-products-section-->
+<section class="our-products-section section">
+     <div class="section-header">
+<div class="section-title-box">
+    <div class="section-title-elements">
+      <div class="title-element-box">
+      </div>
+      <p>Our Products</p>
+    </div>
+    <h3>Explore Our Products</h3>
+  </div>
+   <!-- Section Navigation-->
+  <div class="section-navigation">
+    <div class="navigation-button">
+      <img src="./images/Home/arrow-left.svg" alt="arrow-left" />
+    </div>
+    <div class="navigation-button">
+      <img src="./images/Home/arrow-right.svg" alt="arrow-right" />
+    </div>
+  </div>
+  </div>
+   <!-- Product Container-->
+  <div class="products-container">
+    <!-- Product Card-->
+    <div class="product-card">
+      <div class="card-images">
+      <div class="card-icons">
+        <img src="./images/Home/heart.svg" alt="heart-icon" />
+        <img src="./images/Home/eye.svg" alt="eye-icon" />
+      </div>
+      <img src="./images/Home/cat-img.svg" alt="cat-img" class="card-img"/>
+      </div>
+      <div class="card-text">
+        <h5 class="product-name">Breed Dry Dog Food</h5>
+        <div class="card-info">
+          <p class="current-price">$100</p>
+        <div class="rating-box">
+          <div class="rating-stars">
+          <img src="./images/Home/orange-star.svg" alt="orange-star" />
+           <img src="./images/Home/orange-star.svg" alt="orange-star" />
+            <img src="./images/Home/orange-star.svg" alt="orange-star" />
+             <img src="./images/Home/grey-star.svg" alt="grey-star" />
+              <img src="./images/Home/grey-star.svg" alt="grey-star" />
+             </div>
+              <p class="product-rating-number">(35)</p>
+        </div>
+      </div>
+      </div>
+    </div>
+     <!-- Product Card-->
+     <div class="product-card camera-card">
+      <div class="card-images">
+      <div class="card-icons">
+        <img src="./images/Home/heart.svg" alt="heart-icon" />
+        <img src="./images/Home/eye.svg" alt="eye-icon" />
+      </div>
+      <img src="./images/Home/canon-camera.svg" alt="camera-img" class="card-img"/>
+      </div>
+        <button class="card-button" type="button">Add To Cart</button>
+      <div class="card-text">
+        <h5 class="product-name">CANON EOS DSLR Camera</h5>
+        <div class="card-info">
+          <p class="current-price">$360</p>
+        <div class="rating-box">
+          <div class="rating-stars">
+          <img src="./images/Home/orange-star.svg" alt="orange-star" />
+           <img src="./images/Home/orange-star.svg" alt="orange-star" />
+            <img src="./images/Home/orange-star.svg" alt="orange-star" />
+              <img src="./images/Home/orange-star.svg" alt="orange-star" />
+              <img src="./images/Home/grey-star.svg" alt="grey-star" />
+             </div>
+              <p class="product-rating-number">(95)</p>
+        </div>
+      </div>
+      </div>
+    </div>
+     <!-- Product Card-->
+      <div class="product-card">
+      <div class="card-images">
+      <div class="card-icons">
+        <img src="./images/Home/heart.svg" alt="heart-icon" />
+        <img src="./images/Home/eye.svg" alt="eye-icon" />
+      </div>
+      <img src="./images/Home/asus-computer.svg" alt="asus-computer-img" class="card-img"/>
+      </div>
+      <div class="card-text">
+        <h5 class="product-name">ASUS FHD Gaming Laptop</h5>
+        <div class="card-info">
+          <p class="current-price">$700</p>
+        <div class="rating-box">
+          <div class="rating-stars">
+          <img src="./images/Home/orange-star.svg" alt="orange-star" />
+           <img src="./images/Home/orange-star.svg" alt="orange-star" />
+            <img src="./images/Home/orange-star.svg" alt="orange-star" />
+           <img src="./images/Home/orange-star.svg" alt="orange-star" />
+             <img src="./images/Home/orange-star.svg" alt="orange-star" />
+             </div>
+              <p class="product-rating-number">(325)</p>
+        </div>
+      </div>
+      </div>
+    </div>
+     <!-- Product Card-->
+    <div class="product-card">
+      <div class="card-images">
+      <div class="card-icons">
+        <img src="./images/Home/heart.svg" alt="heart-icon" />
+        <img src="./images/Home/eye.svg" alt="eye-icon" />
+      </div>
+      <img src="./images/Home/products-set.jpg" alt="products-set" class="card-img"/>
+      </div>
+      <div class="card-text">
+        <h5 class="product-name">Curology Product Set </h5>
+        <div class="card-info">
+          <p class="current-price">$500</p>
+        <div class="rating-box">
+          <div class="rating-stars">
+          <img src="./images/Home/orange-star.svg" alt="orange-star" />
+           <img src="./images/Home/orange-star.svg" alt="orange-star" />
+            <img src="./images/Home/orange-star.svg" alt="orange-star" />
+               <img src="./images/Home/orange-star.svg" alt="orange-star" />
+              <img src="./images/Home/grey-star.svg" alt="grey-star" />
+             </div>
+              <p class="product-rating-number">(145)</p>
+        </div>
+      </div>
+      </div>
+    </div>
+     <!-- Product Card-->
+  <div class="product-card">
+      <div class="card-images">
+      <div class="card-icons">
+        <img src="./images/Home/heart.svg" alt="heart-icon" />
+        <img src="./images/Home/eye.svg" alt="eye-icon" />
+      </div>
+      <div class="card-label">NEW</div>
+      <img src="./images/Home/car.svg" alt="kids car" class="card-img"/>
+      </div>
+      <div class="card-text">
+        <h5 class="product-name">Kids Electric Car </h5>
+        <div class="card-info">
+          <p class="current-price">$960</p>
+        <div class="rating-box">
+          <div class="rating-stars">
+          <img src="./images/Home/orange-star.svg" alt="orange-star" />
+           <img src="./images/Home/orange-star.svg" alt="orange-star" />
+            <img src="./images/Home/orange-star.svg" alt="orange-star" />
+               <img src="./images/Home/orange-star.svg" alt="orange-star" />
+                <img src="./images/Home/orange-star.svg" alt="orange-star" />
+             </div>
+              <p class="product-rating-number">(65)</p>
+        </div>
+      </div>
+      </div>
+       <div class="card-circles">
+<div class="primary-red-circle circle" ></div>
+<div class="red-circle circle" ></div>
+      </div>
+    </div>
+     <!-- Product Card-->
+ <div class="product-card">
+      <div class="card-images">
+      <div class="card-icons">
+        <img src="./images/Home/heart.svg" alt="heart-icon" />
+        <img src="./images/Home/eye.svg" alt="eye-icon" />
+      </div>
+      <img src="./images/Home/boots.svg" alt="products-set" class="card-img"/>
+      </div>
+      <div class="card-text">
+        <h5 class="product-name">Jr. Zoom Soccer Cleats </h5>
+        <div class="card-info">
+          <p class="current-price">$1160</p>
+        <div class="rating-box">
+          <div class="rating-stars">
+          <img src="./images/Home/orange-star.svg" alt="orange-star" />
+           <img src="./images/Home/orange-star.svg" alt="orange-star" />
+            <img src="./images/Home/orange-star.svg" alt="orange-star" />
+               <img src="./images/Home/orange-star.svg" alt="orange-star" />
+              <img src="./images/Home/grey-star.svg" alt="grey-star" />
+             </div>
+              <p class="product-rating-number">(35)</p>
+        </div>
+      </div>
+      </div>
+       <div class="card-circles">
+<div class="yellow-circle circle" ></div>
+<div class="red-circle circle" ></div>
+      </div>
+    </div>
+     <!-- Product Card-->
+<div class="product-card">
+      <div class="card-images">
+      <div class="card-icons">
+        <img src="./images/Home/heart.svg" alt="heart-icon" />
+        <img src="./images/Home/eye.svg" alt="eye-icon" />
+      </div>
+        <div class="card-label">NEW</div>
+      <img src="./images/Home/game-shooter.svg" alt="game-shooter" class="card-img"/>
+      </div>
+      <div class="card-text">
+        <h5 class="product-name">GP11 Shooter USB Gamepad</h5>
+        <div class="card-info">
+          <p class="current-price">$660</p>
+        <div class="rating-box">
+          <div class="rating-stars">
+          <img src="./images/Home/orange-star.svg" alt="orange-star" />
+           <img src="./images/Home/orange-star.svg" alt="orange-star" />
+            <img src="./images/Home/orange-star.svg" alt="orange-star" />
+               <img src="./images/Home/orange-star.svg" alt="orange-star" />
+              <img src="./images/Home/star-half-filled.svg" alt="half-orange-star" />
+             </div>
+              <p class="product-rating-number">(55)</p>
+        </div>
+      </div>
+      </div>
+      <div class="card-circles">
+<div class="black-circle circle" ></div>
+<div class="red-circle circle" ></div>
+      </div> 
+    </div>
+       <!-- Product Card-->
+ <div class="product-card">
+      <div class="card-images">
+      <div class="card-icons">
+        <img src="./images/Home/heart.svg" alt="heart-icon" />
+        <img src="./images/Home/eye.svg" alt="eye-icon" />
+      </div>
+      <img src="./images/Home/jacket.svg" alt="jacket" class="card-img"/>
+      </div>
+      <div class="card-text">
+        <h5 class="product-name">Quilted Satin Jacket </h5>
+        <div class="card-info">
+          <p class="current-price">$660</p>
+        <div class="rating-box">
+          <div class="rating-stars">
+          <img src="./images/Home/orange-star.svg" alt="orange-star" />
+           <img src="./images/Home/orange-star.svg" alt="orange-star" />
+            <img src="./images/Home/orange-star.svg" alt="orange-star" />
+               <img src="./images/Home/orange-star.svg" alt="orange-star" />
+              <img src="./images/Home/star-half-filled.svg" alt="halt-grey-star" />
+             </div>
+              <p class="product-rating-number">(55)</p>
+        </div>
+      </div>
+      </div>
+      <div class="card-circles">
+<div class="black-circle circle" ></div>
+<div class="red-circle circle" ></div>
+      </div>
+    </div>
+  </div>
+   <button class="products-button button" type="button">View All products</button>
+</section>
+ <!-- new-arrivals Section-->
+<section class="new-arrivals section">
+    <div class="section-header">
+<div class="section-title-box">
+    <div class="section-title-elements">
+      <div class="title-element-box">
+      </div>
+      <p>Featured</p>
+    </div>
+    <h3>New Arrival</h3>
+  </div>
+  </div>
+   <!-- new-arrivals Container-->
+  <div class="new-arrivals-container">
+     <!-- First Image-->
+<div class="first-image">
+  <img src="./images/Home/placestation.png" alt="placestation" class="arrival-image"/>
+<div class="image-text">
+  <h5>PlayStation 5</h5>
+  <p>Black and White version of the PS5 coming out on sale.</p>
+  <a href="#">Shop Now</a>
+</div>
+</div>
+ <!-- Second Image-->
+<div class="second-image">
+  <img src="./images/Home/attractive-woman.png" alt="woman-image"  class="arrival-image"/>
+<div class="image-text">
+  <h5>Women’s Collections</h5>
+  <p>Black and White version of the PS5 coming out on sale.</p>
+  <a href="#">Shop Now</a>
+</div>
+</div>
+ <!-- Third Image-->
+<div class="third-image">
+<img src="images/Home/amazon.png" alt="speaker" class="arrival-image" />
+<div class="image-text">
+  <h5>Speakers</h5>
+  <p>Amazon wireless speakers</p>
+  <a href="#">Shop Now</a>
+</div>
+</div>
+ <!-- Fourth Image-->
+<div class="fourth-image">
+<img src="./images/Home/gucci.png" alt="gucci-products" class="arrival-image" />
+<div class="image-text">
+  <h5>Perfume</h5>
+  <p>GUCCI INTENSE OUD EDP</p>
+  <a href="#">Shop Now</a>
+</div>
+</div>
+  </div>
+</section>
+ <!-- service-features Section-->
+  <section class="service-features">
+     <!-- Service Box-->
+    <div class="service-box">
+  <img src="./images/Home/Services.svg" alt="car-icon" class="service-box__icon"/>
+  <div class="service-box__text">
+    <h4 class="service-box__title">FREE AND FAST DELIVERY</h4>
+    <p class="service-box__description">Free delivery for all orders over $140</p>
+  </div>
+</div>
+    <!-- Service Box-->
+<div class="service-box">
+  <img src="./images/Home/support.svg" alt="car-icon" class="service-box__icon"/>
+  <div class="service-box__text">
+    <h4 class="service-box__title">24/7 CUSTOMER SERVICE</h4>
+    <p class="service-box__description">Friendly 24/7 customer support</p>
+  </div>
+</div>
+    <!-- Service Box-->
+<div class="service-box">
+  <img src="./images/Home/guaranty-icon.svg" alt="car-icon" class="service-box__icon"/>
+  <div class="service-box__text">
+    <h4 class="service-box__title">MONEY BACK GUARANTEE</h4>
+    <p class="service-box__description">We reurn money within 30 days</p>
+  </div>
+</div>
+  </section>
+      <!-- Service Navigation-->
+  <div class="navigation-button service-button">
+    <img src="./images/Home/arrow-up.svg" alt="arrow-up" />
+  </div>
+</main>
+    <!-- Footer-->
+  <footer class="footer">
+    <div class="footer-top-container">
+<div class="subscribe-box footer-column">
+  <h6>Exclusive</h6>
+  <p class="subscribe">Subscribe</p>
+  <p class="discount">Get 10% off your first order</p>
+  <div class="input-container">
+  <input type="email" placeholder="Enter your email" class="input-with-icon">
+  <img src="./images/Home/icon-send.svg" alt="arrow-icon" class="input-icon">
+</div>
+
+</div>
+<div class="support-box footer-column">
+  <p class="footer-column-title">Support</p>
+     <ul class="account-list">
+    <li class="contact-info">111 Bijoy sarani, Dhaka,  DH 1515, Bangladesh.</li>
+    <li><a href="mailto:exclusive@gmail.com" target="_blank" class="contact-info">exclusive@gmail.com</a></li>
+    <li><a href="tel:+88015-88888-9999" target="_blank" class="contact-info">+88015-88888-9999</a></li>
+</ul>
+  </div>
+<div class="footer-column">
+    <p class="footer-column-title">Account</p>
+    <ul class="account-list">
+    <li>My Account</li>
+    <li>Login / Register</li>
+    <li>Cart</li>
+    <li>Wishlist</li>
+    <li>Shop</li>
+
+  </ul>
+</div>
+<div class="footer-column">
+    <p class="footer-column-title">Quick Link</p>
+      <ul class="account-list">
+    <li>Privacy Policy</li>
+    <li>Terms Of Use</li>
+    <li>FAQ</li>
+    <li>Contact</li>
+  </ul>
+</div>
+<div class="footer-column">
+  <div class="account-list">
+    <p class="footer-column-title">Download App</p>
+    <p class="footer-save">Save $3 with App New User Only</p>
+    <div class="apps-container">
+      <img src="./images/Home/Qr-Code.svg" alt="qr-code" />
+      <div class="apps-box">
+        <img src="./images/Home/GooglePlay.svg" alt="app-store" />
+        <img src="./images/Home/AppStore.svg" alt="app-store" />
+      </div>
+    </div>
+   <div class="social-icons">
+  <a href="https://www.facebook.com" target="_blank">
+    <img src="./images/Home/Icon-Facebook.svg" alt="facebook" />
+  </a>
+  <a href="https://www.twitter.com" target="_blank">
+    <img src="./images/Home/Icon-Twitter.svg" alt="twitter" />
+  </a>
+  <a href="https://www.instagram.com" target="_blank">
+    <img src="./images/Home/icon-instagram.svg" alt="instagram" />
+  </a>
+  <a href="https://www.linkedin.com" target="_blank">
+    <img src="./images/Home/Icon-Linkedin.svg" alt="linkedin" />
+  </a>
+</div>
+
+  </div>
+</div>
+    </div>
+    <div class="footer-bottom-container">
+      <p>&copy; Copyright Rimel 2022. All right reserved</p>
+    </div>
+  </footer>
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
+</body>
+</html>
