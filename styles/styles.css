@@ -186,11 +186,10 @@ body {
 
 /*aside*/
 .hero-section {
-  width: 79%;
   margin: 0 auto;
   display: grid;
-  grid-template-columns: 19% 79%;
-  gap: 2%;
+  grid-template-columns: 18.5% 76.5%;
+  gap: 5%;
   margin-bottom: 10rem;
   margin-top: 4rem;
 }
@@ -210,58 +209,75 @@ body {
   cursor: pointer;
 }
 
-.dropdown-icon {
-  margin-left: 2rem;
-}
-
-.hero-content {
+.carousel-item {
   background-color: var(--color-black);
-  display: grid;
-  grid-template-columns: 40% 56%;
-  gap: 4%;
-  position: relative;
 }
 
-.hero-text {
-  padding-top: 5.8rem;
-  padding-left: 6.4rem;
-  color: var(--color-light);
-  font-size: var(--font-medium-size);
-  line-height: 2.4rem;
+/* Split the content in half */
+.text-side {
+  display: flex;
+  flex-direction: column;
+}
+
+.text-content {
+  padding: 5.8rem 3.8rem 4.7rem 6.4rem;
+  display: flex;
+  flex-direction: column;
 }
 
 .hero-subtitles {
   display: flex;
-  align-items: center;
-  gap: var(--large-space);
+  gap: 2.4rem;
+  margin-bottom: 2rem;
+  justify-content: flex-start;
 }
 
 .hero-subtitles p {
-  margin: 0;
-}
-
-.hero-image img {
-  width: 100%;
-}
-
-.hero-title h1 {
-  font-family: 'Inter', sans-serif;
-  font-size: 4.8rem;
-  line-height: 6rem;
-  font-weight: 600;
-  letter-spacing: 4%;
-  margin-top: 2rem;
-  margin-bottom: 2.2rem;
-}
-
-.shopping-link {
+  font-size: 1.6rem;
+  line-height: 2.4;
   color: var(--color-light);
 }
 
-.hero-icons {
+.hero-header {
+  font-size: 4.8rem;
+  font-family: 'Inter', sans-serif;
+  font-weight: 600;
+  letter-spacing: 4%;
+  color: var(--primary-color);
+  margin-bottom: 2.2rem;
+  line-height: 6rem;
+}
+
+.hero-btn {
+  display: flex;
+  align-items: center;
+  gap: 1.2rem;
+}
+
+.shopping-link {
+  font-size: 1.6rem;
+  line-height: 2.4rem;
+  font-weight: 500;
+  color: var(--color-light);
+  text-decoration: none;
+  position: relative;
+  cursor: pointer;
+}
+
+.shopping-link::after {
+  content: "";
   position: absolute;
-  left: 39.5%;
-  bottom: 1.1rem;
+  bottom: -4px;
+  left: 50%;
+  transform: translateX(-50%);
+  width: 8.1rem;
+  height: 1px;
+  background-color: var(--color-light);
+}
+
+.image-side img {
+  object-fit: cover;
+  height: 100%;
 }
 
 /*Flash Sales */

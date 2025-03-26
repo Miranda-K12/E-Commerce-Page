@@ -71,8 +71,7 @@
 </header>
 <main>
     <!-- Hero Section -->
-  <section class="hero-section">
-     <!-- Sidebar with categories-Bootstrap -->
+  <section class="hero-section section">
   <aside>
     <div class="categories-box">
 <ul class="categories-list">
@@ -88,28 +87,41 @@
 </ul>
 </div>
   </aside>
-   <!-- Hero Content-->
+   <!-- Hero Content, used Bootstrap-->
   <div class="hero-content">
-     <!-- Hero Text Section -->
-    <div class="hero-text">
-      <div class="hero-subtitles">
-        <img src="./images/Home/apple.svg" alt="apple" />
-        <p>iPhone 14 Series</p>
-      </div>
-      <div class="hero-title">
-        <h1>Up to 10% off Voucher</h1>
-      </div>
-      <div class="hero-button">
-        <a href="#" class="shopping-link">Shop Now</a>
-        <img src="./images/Home/write-arrow.svg" alt="right-arrow" />
-      </div>
-    </div>
-     <!-- Hero Image Section -->
-    <div class="hero-image">
-      <img src="./images/Home/hero-img.png" alt="mobile-img" />
-    </div>
-    <img src="./images/Home/hero-icons.svg" alt="navigation-buttons"  class="hero-icons"/>
+     <div id="carouselExampleCaptions" class="carousel slide">
+  <div class="carousel-indicators">
+    <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
+    <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="1" aria-label="Slide 2"></button>
+    <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="2" aria-label="Slide 3"></button>
   </div>
+  <div class="carousel-inner">
+<div class="carousel-item active">
+  <div class="row no-gutters">
+    <!-- Left side (Text) -->
+    <div class="col-md-6 d-flex align-items-center text-side">
+      <div class="text-content">
+        <div class="hero-subtitles">
+          <img src="./images/Home/apple.svg" alt="apple-icon" />
+          <p>iPhone 14 Series</p>
+        </div>
+        <h1 class="hero-header">Up to 10% off Voucher</h1>
+        <div class="hero-btn">
+          <a href="#" class="shopping-link">Shop Now</a>
+          <img src="./images/Home/white-arrow.svg" alt="right-arrow" />
+        </div>
+      </div>
+    </div>
+
+    <!-- Right side (Image) -->
+    <div class="col-md-6 image-side">
+      <img src="./images/Home/hero-img.png" class="d-block w-100" alt="...">
+    </div>
+  </div>
+</div>
+  </div>
+</div>
+   </div>
   </section>
    <!-- flash-sales Section -->
 <section class="flash-sales-section">
