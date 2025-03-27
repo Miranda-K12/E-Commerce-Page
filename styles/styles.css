@@ -25,6 +25,7 @@ html {
   --color-yellow: #EEFF61;
   --border-radius: 4px;
   --small-gap: 8px;
+  --small-font-size: 1.2rem;
   --font-medium-size: 1.6rem;
   --font-large-size: 2.4rem;
   --medium-space: 1.6rem;
@@ -78,6 +79,7 @@ body {
   padding-top: 1.2rem;
   font-size: 1.4rem;
   background-color: var(--color-black);
+  position: relative;
 }
 
 .header__box p {
@@ -99,10 +101,13 @@ body {
   display: flex;
   align-items: center;
   position: absolute;
-  margin-left: 80%;
-  top: -3.6rem;
+  right: 13.6rem;
+  top: 1.2rem;
   height: 2.4rem;
   font-size: 1.4rem;
+  cursor: pointer;
+  outline: none;
+  z-index: 1;
 }
 
 .header__bottom-box {
@@ -176,12 +181,41 @@ body {
   gap: var(--medium-space);
 }
 
-.drop-menu {
+.burger-menu,
+.burger-navigation {
   display: none;
-  position: absolute;
-  right: 0%;
-  width: 70%;
+}
+
+.burger-menu-bar {
+  height: 4px;
+  width: 4rem;
+  background-color: white;
+  transition: all 0.3s ease;
+  margin: 4px 0;
+}
+
+.active {
+  display: flex;
+}
+
+.burger-menu.active .burger-menu-bar:nth-child(1) {
+  transform: rotate(45deg);
+  top: 10px;
+  transform-origin: center;
   z-index: 100;
+  position: absolute;
+}
+
+.burger-menu.active .burger-menu-bar:nth-child(2) {
+  opacity: 0;
+}
+
+.burger-menu.active .burger-menu-bar:nth-child(3) {
+  transform: rotate(-45deg);
+  top: 10px;
+  transform-origin: center;
+  z-index: 1000;
+  position: absolute;
 }
 
 /*aside*/

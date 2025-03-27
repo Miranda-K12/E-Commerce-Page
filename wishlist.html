@@ -10,14 +10,8 @@
     <title>Wishlist</title>
 </head>
 <body>
- <header class="header">
- <div class="header__box">
-  <p class="header__text">
-    Summer Sale For All Swim Suits And Free Express Delivery - OFF 50% 
-    <a href="#shopnow" class="hero__shop-now-link">Shop Now</a>
-  </p>
-</div>
-<div class="dropdown">
+<header class="header">
+  <div class="dropdown">
     <select id="language-select" class="dropdown-select">
       <option value="english" selected>English</option>
       <option value="french">French</option>
@@ -26,42 +20,63 @@
       <option value="italian">Italian</option>
     </select>
   </div>
+  <!-- Header Box containing the promotion text and shop now link -->
+ <div class="header__box">
+  <p class="header__text">
+    Summer Sale For All Swim Suits And Free Express Delivery - OFF 50% 
+    <a href="#shopnow" class="hero__shop-now-link">Shop Now</a>
+  </p>
+</div>
+
+   <!-- Header Bottom Box containing the navigation bar and buttons -->
   <div class="header__bottom-box">
+     <!-- Navigation Bar with menu items -->
    <div class="navbar">
     <p class="navbar-header">Exclusive</p>
      <nav class="navbar__nav">
     <ul class="navbar__list">
-      <li><a href="#home" class="navbar__link">Home</a></li>
+      <li><a href="./index.html" class="navbar__link">Home</a></li>
       <li><a href="#contact" class="navbar__link">Contact</a></li>
-     <li><a href="about.html" class="navbar__link">About</a></li>
+     <li><a href="./about.html" class="navbar__link">About</a></li>
       <li><a href="#signup" class="navbar__link navbar__link--signup">Sign Up</a></li>
     </ul>
   </nav>
    </div>
+   <!-- Nav Buttons (Search Bar, Wishlist, and Basket) -->
    <div class="nav-buttons">
   <div class="nav-buttons__search">
     <input type="text" placeholder="What are you looking for?" class="nav-buttons__search-input">
     <img src="./images/Home/search.svg" class="nav-buttons__search-icon" alt="search-icon" />
   </div>
   <div class="nav-buttons__icons">
-   <a href="wishlist.html">
+   <a href="./wishlist.html">
   <img src="./images/Home/Wishlist.svg" class="nav-buttons__wishlist-icon" alt="wishlist-icon" />
 </a>
     <img src="./images/Home/basket.svg" class="nav-buttons__basket-icon" alt="basket-icon" />
   </div>
 </div>
   </div>
-<div class="drop-menu">
- <ul class="navbar__list dropdown-list">
-      <li><a href="./index.html" class="navbar__link dropdown-link">Home</a></li>
-      <li><a href="#contact" class="navbar__link dropdown-link">Contact</a></li>
-     <li><a href="about.html" class="navbar__link dropdown-link">About</a></li>
-      <li><a href="#signup" class="navbar__link navbar__link--signup dropdown-link">Sign Up</a></li>
-      <li><a href="./wishlist.html">
+<div class="burger-menu" id="burger-menu">
+        <div class="burger-menu-bar"></div>
+        <div class="burger-menu-bar"></div>
+        <div class="burger-menu-bar"></div>
+    </div>
+    <div class="burger-navigation">
+<ul class="burger-navigation-list">
+   <li><a href="./index.html" class="navbar__link">Home</a></li>
+      <li><a href="#contact" class="navbar__link">Contact</a></li>
+     <li><a href="./about.html" class="navbar__link">About</a></li>
+      <li><a href="#signup" class="navbar__link navbar__link--signup">Sign Up</a></li>
+      <li></li>
+</ul>
+     <input type="text" placeholder="What are you looking for?" class="burger-navigation-input"> 
+     <div>
+      <a href="./wishlist.html">
   <img src="./images/Home/Wishlist.svg" class="nav-buttons__wishlist-icon" alt="wishlist-icon" />
-</a></li>
-    </ul>
+</a>
+<img src="./images/Home/basket.svg" class="nav-buttons__basket-icon" alt="basket-icon" />
 </div>
+    </div>
 </header>
 <main>
   <section class="wishlist-section section">
@@ -364,5 +379,6 @@
     </div>
   </footer>
  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
+<script src="./script.js"></script>
 </body>
 </html>
