@@ -15,7 +15,7 @@ The Full E-Commerce Website project includes three main pages:
 - **Responsive Design**: The website is designed to be fully responsive, with specific breakpoints set for 1440px (desktop), 1024px, 768px, and 480px (mobile devices).
 - **Flexbox & Grid Layouts**: Both Flexbox and CSS Grid are used for the layout, ensuring that the website adapts efficiently to different screen sizes.
 - **Hover Effects**: Interactive hover effects are applied to elements, enhancing the user experience.
-- **Bootstrap**: Bootstrap is used for the sidebar and breadcrumb components, making it easier to organize and navigate through different sections of the website.
+- **Bootstrap**: Bootstrap is used for the hero section, sidebar and breadcrumb components, making it easier to organize and navigate through different sections of the website.
 
 This project was created to showcase practical skills learned in front-end development, focusing on creating a user-friendly and aesthetically pleasing e-commerce experience.
 
