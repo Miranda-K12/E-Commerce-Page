@@ -1,5 +1,5 @@
-@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
-@import url('https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap');
+@import url("https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap");
 
 * {
   margin: 0;
@@ -13,16 +13,16 @@ html {
 
 :root {
   --primary-color: #ffff;
-  --color-light: #FAFAFA;
-  --secondary-color: #DB4444;
-  --color-red: #FB1314;
-  --color-hover: #E07575;
+  --color-light: #fafafa;
+  --secondary-color: #db4444;
+  --color-red: #fb1314;
+  --color-hover: #e07575;
   --color-black: #000;
-  --color-dark: #0D0D0D;
-  --color-grey: #F5F5F5;
-  --color-grey-secondary: #A0A3BD;
-  --color-green: #00FF66;
-  --color-yellow: #EEFF61;
+  --color-dark: #0d0d0d;
+  --color-grey: #f5f5f5;
+  --color-grey-secondary: #a0a3bd;
+  --color-green: #00ff66;
+  --color-yellow: #eeff61;
   --border-radius: 4px;
   --small-gap: 8px;
   --small-font-size: 1.2rem;
@@ -34,7 +34,6 @@ html {
 }
 
 body {
-  max-width: 144rem;
   width: 100%;
   font-family: "Poppins", sans-serif;
   margin: 0 auto;
@@ -147,7 +146,7 @@ body {
 }
 
 .navbar__link::after {
-  content: '';
+  content: "";
   position: absolute;
   bottom: -2px;
   left: 0;
@@ -311,7 +310,7 @@ body {
 
 .hero-header {
   font-size: 4.8rem;
-  font-family: 'Inter', sans-serif;
+  font-family: "Inter", sans-serif;
   font-weight: 600;
   letter-spacing: 4%;
   color: var(--primary-color);
@@ -402,7 +401,7 @@ body {
   font-size: 3.6rem;
   line-height: 4.8rem;
   font-weight: 600;
-  font-family: 'Inter';
+  font-family: "Inter";
   margin-top: var(--large-space);
 }
 
@@ -662,7 +661,7 @@ body {
 
 .music-box-content h3 {
   color: var(--color-light);
-  font-family: 'Inter', sans-serif;
+  font-family: "Inter", sans-serif;
   font-size: 4.8rem;
   line-height: 6rem;
 }
@@ -849,13 +848,13 @@ body {
   font-size: 2.4rem;
   letter-spacing: 3%;
   font-weight: 600;
-  font-family: 'Inter', sans-serif;
+  font-family: "Inter", sans-serif;
 }
 
 .image-text p {
   font-size: 1.4rem;
   line-height: 2.1rem;
-  font-family: 'Inter', sans-serif;
+  font-family: "Inter", sans-serif;
 }
 
 .image-text a {
@@ -936,7 +935,7 @@ body {
 
 .path__list {
   display: flex;
-  gap:
+  gap: ;
 }
 
 /*About Section */
@@ -960,7 +959,6 @@ body {
   font-size: 5.4rem;
   font-weight: 600;
   margin-bottom: 4rem;
-
 }
 
 .about-section-text p {
@@ -995,7 +993,6 @@ body {
 .features-box:hover {
   cursor: pointer;
   transform: translateY(-5px);
-
 }
 
 .features-description {
@@ -1046,7 +1043,7 @@ body {
 }
 
 .employee-box:hover {
-  transform: scale(1.03)
+  transform: scale(1.03);
 }
 
 .employee-name {
@@ -1139,7 +1136,6 @@ body {
   height: 4.1rem;
   margin-bottom: var(--medium-space);
 }
-
 
 .wishlist-card-button p {
   color: var(--primary-color);
